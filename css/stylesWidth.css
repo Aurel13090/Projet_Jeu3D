@@ -1,0 +1,8 @@
+.monde {
+	position: absolute;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(#000000, #6E90AE);
+	background: -webkit-linear-gradient(#352F2D, #9FCDF7);
+}
