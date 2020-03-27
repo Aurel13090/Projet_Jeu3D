@@ -1,0 +1,210 @@
+body {
+	margin: 0;
+}
+
+/* Barre de navigation */
+.link {
+	font-family: monospace;
+	font-weight: bold;
+	text-align: center;
+}
+
+.link:hover {
+	color: #F3F3E5;
+}
+
+/* Barre de navigation */
+
+.nav{
+	position: absolute;
+	top: 0.5em;
+	left: 2em;
+}
+
+.nav a{
+	display: block;
+	padding: 10px;
+	border: 2px solid #77FE72;
+    text-decoration: none;
+	color: #77FE72;
+}
+
+.jeuEntete {
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(#000000, #6E90AE);
+	background: -webkit-linear-gradient(#000000, #6E90AE);
+}
+
+.world {
+	position: absolute;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+.entete {
+	position: absolute;
+	top: 4vh;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	pointer-events: none;
+}
+
+.entete h1 {
+	font-family: monospace;
+	font-size: 4.6em;
+	line-height: 1;
+	margin: 0;
+	letter-spacing: -0.026em;
+	color: #F3F3E5;
+}
+
+.score {
+	width: 100%;
+	margin: 2em 0 0;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.scoreContenu {
+	position: relative;
+	display: inline-block;
+	padding: 0 1em;
+	vertical-align: top;
+}
+
+.scoreContenu:nth-child(2) {
+	border-right: 1px solid #F3F3E5;
+	border-left: 1px solid #F3F3E5;
+}
+
+.scoreNom {
+	font-size: 9px;
+	position: relative;
+	margin: 0 0 0.6em 0;
+	text-align: center;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: #F3F3E5;
+}
+
+.scoreValeur {
+	font-family: monospace;
+	font-weight: bold;
+	color: #F3F3E5;
+}
+
+.scoreValeurNiveaul {
+	font-size: 27px;
+}
+
+.scoreValeurDistance {
+	font-size: 29px;
+}
+
+.cercleNiveau {
+	position: absolute;
+	left: 50%;
+	width: 44px;
+	margin: -25px 0 0 -23px;
+	-webkit-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+
+.scoreValeurEnergie {
+	position: relative;
+	width: 59px;
+	height: 8px;
+	margin-top: 2px;
+	border-radius: 3px;
+	background-color: #F3F3E5;
+}
+
+.barreEnergie {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: 2px;
+	background-color: #f25346;
+	-webkit-animation-name: none;
+	animation-name: none;
+	-webkit-animation-duration: 150ms;
+	animation-duration: 150ms;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+.msg {
+	font-weight: bold;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	pointer-events: none;
+}
+
+.msgRejouer {
+	font-size: 1.25vw;
+	bottom: 40vh;
+	display: none;
+	text-indent: 0.5em;
+	letter-spacing: 0.5em;
+	color: #F3F3E5;
+}
+
+.msgDescription {
+	font-family: monospace;
+	font-size: 0.85em;
+	bottom: 6vh;
+	letter-spacing: 0.2em;
+	color: #E4FA00;
+}
+
+.msgDescription span {
+	display: block;
+	color: #404040;
+	white-space: nowrap;
+}
+
+/* Autheurs */
+
+.description h3{
+    position: absolute;
+    font-family: monospace;
+    font-weight: bold;
+	font-size: 12;
+    bottom : 20px;
+    right: 2%; 
+    text-transform: uppercase;
+    text-align: center;
+    color: #F3F3E5;
+}
+
+/* Addaptation à la taille de la page */
+
+@media screen and (max-width: 65em) {
+	.nav {
+		right: 2em;
+	}
+	.link {
+		-webkit-flex: 1;
+		flex: 1;
+	}
+	.entete {
+		font-size: 0.75em;
+		top: 6.5em;
+	}
+	.entete h2 {
+		letter-spacing: 0.65em;
+	}
+	.description h3{
+        color: transparent;
+    }
+}

@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Jeu 3D Mineure 2019-2020</title>
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+		<link rel="stylesheet" type="text/css" href="css/jeu.css">
+		
+		<script type="text/javascript" src="js/TweenMax.min.js"></script>
+		<script type="text/javascript" src="js/three.min.js"></script>
+		<script type="text/javascript" src="js/main.js" ></script>
+		
+	</head>
+	<body>
+		<div class="jeuEntete">
+			<div class="entete">
+				
+				<h1>The SpaceWalker</h1>
+				
+				<div class="score">
+					
+					<div class="scoreContenu" id="level">
+						<div class="scoreNom">Niveau</div>
+						<div class="scoreValeur scoreValeurNiveau" id="valeurNiveau">1</div>
+						<svg class="cercleNiveau" id="cercleNiveau" viewbox="0 0 200 200">
+							<circle id="cercleNiveauBgr" r="80" cx="100" cy="100" fill="none" stroke="#F3F3E5" stroke-width="24px"/>
+							<circle id="cercleNiveauStroke" r="80" cx="100" cy="100" fill="none" stroke="#091FE5" stroke-width="14px" stroke-dasharray="502"/>
+						</svg>
+					</div>
+					
+					<div class="scoreContenu" id="dist">
+						<div class="scoreNom">Distance</div>
+						<div class="scoreValeur scoreValeurDistance" id="distanceValeur">000</div>
+					</div>
+					
+					<div class="scoreContenu" id="energie">
+						<div class="scoreNom">Carburant</div>
+						<div class="scoreValeur scoreValeurEnergie" id="energieValeur">
+							<div class="barreEnergie" id="energieBarre"></div>
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>
+			
+			<div class="world" id="world"></div>
+			<div class="msg msgRejouer" id="messageRejouer">Appuyer pour Rejouer</div>
+			<div class="msg msgDescription">Attraper le Carburant<span>Eviter les Asteroïdes</span></div>
+			
+			<nav class="nav">
+			<a class="link" href="index.html">Deuxième Partie</a>
+			</nav>
+        
+        	<div class="description"> 
+            <h3>Auteurs : Ziaczyk-Aumont Paul & Caramelle Aurélien</h3>
+        	</div>
+		</div>
+	</body>
+</html>
